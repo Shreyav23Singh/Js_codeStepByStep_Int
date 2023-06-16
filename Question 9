@@ -1,0 +1,18 @@
+function sum(a,b){
+    return a+b;
+}
+console.log(sum(10,'2'));
+
+A. "12
+B. 12
+C. 102
+D. "102"
+ANS : - D
+The given code defines a function named `sum` that takes two parameters, `a` and `b`. Inside the function, it adds `a` and `b` together 
+and returns the result.
+
+However, there is an issue with the code when calling the `sum` function. The second argument passed to `sum` is a string `'2'`, while 
+the function expects both `a` and `b` to be numbers. JavaScript performs implicit type coercion in this case and concatenates the string 
+and number, resulting in a string concatenation rather than numerical addition.
+
+When you run the code with `console.log(sum(10, '2'));`, it will output the string `'102'` instead of the expected sum of `12`.
