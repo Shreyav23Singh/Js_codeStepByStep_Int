@@ -1,0 +1,13 @@
+let c={
+    greeting:'Hey!'
+}
+let d;
+d=c;
+c.greeting ='Hello';
+console.log(d.greeting)
+
+Output
+Hello
+
+Since both c and d are references to the same object, modifying the greeting property of c will also affect the d object. 
+Therefore, the output of console.log(d.greeting) will be 'Hello'
