@@ -1,0 +1,17 @@
+Q2. for(var i=0;i<3;i++){
+    setTimeout(()=>console.log(i),1);
+} 
+
+
+In the code you provided, you are using a setTimeout function inside a loop. Since setTimeout is an asynchronous function, it will execute after the loop has finished running. Therefore, by the
+time the console.log statement is executed, the value of i will be the final value it reached in the loop, which is 3.
+/ / Solution  /  /
+we can fix this problem by using closure and than we got output as 0 1 2
+
+To achieve the desired behavior and have each iteration of the loop print the corresponding value of i, you can create a separate scope for each iteration using a closure.
+Here's an updated version of the code:
+for (var i = 0; i < 3; i++) {
+  (function (i) {
+    setTimeout(() => console.log(i), 1);
+  })(i);
+}
