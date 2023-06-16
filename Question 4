@@ -1,0 +1,15 @@
+console.log(+true)
+console.log(!'abc')
+console.log(+false)
+
+Output
+node /tmp/tLDpe2pliA.js
+1
+false
+0
+/ /  The unary plus operator (+) attempts to convert its operand to a number. In JavaScript, true is internally represented as 1, and false as 0. 
+Therefore, when you use + with true, it will convert it to the number 1. 
+
+
+/ /  The logical NOT operator (!) negates the truthiness of its operand. In JavaScript, a non-empty string like 'abc' is considered truthy.
+So, when you use ! with the string 'abc', it negates its truthiness and returns false.
