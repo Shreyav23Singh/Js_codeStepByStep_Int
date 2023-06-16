@@ -1,0 +1,25 @@
+let temp ={
+    a: 100,
+    b: 20,
+    sum(){
+        return this.a+this.b;
+    },
+    multi(){
+        return this.a*this.b;
+    },
+    divide(){
+        return this.a/this.b;
+    }
+}
+console.log(temp.sum())
+console.log(temp.multi())
+console.log(temp.divide())
+
+Output
+node /tmp/tLDpe2pliA.js
+120
+2000
+5
+
+In this code , temp is a object in which a  and b are properties and sum() , multi() & divide() are methods of it .
+The console.log statements will output the results of calling the sum  multi and divide methods on the temp object, respectively.
