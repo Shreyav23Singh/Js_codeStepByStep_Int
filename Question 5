@@ -1,0 +1,54 @@
+const bird ={
+    size:'small'
+};
+const mouse ={
+    name: 'Mickey',
+    small:true,
+};
+console.log(mouse.bird)
+console.log(bird[mouse.name])
+console.log(mouse[bird.size])
+console.log(mouse[bird["size"]])
+console.log(mouse.bird.size)
+
+In the given code, there are two objects defined: `bird` and `mouse`. Let's analyze each `console.log` statement one by one:
+
+```javascript
+console.log(mouse.bird);
+```
+
+This will output `undefined`. The `mouse` object does not have a property called `bird`, so accessing `mouse.bird` will result in `undefined`.
+
+```javascript
+console.log(bird[mouse.name]);
+```
+
+This will output `undefined` as well. The `bird` object does not have a property with the name `'Mickey'`, so accessing `bird[mouse.name]` will also result in `undefined`.
+
+```javascript
+console.log(mouse[bird.size]);
+```
+
+This will output `'small'`. The `mouse` object has a property with the name `'small'`, and the `bird` object has a property named `'size'` with the value `'small'`. So, `mouse[bird.size]` is equivalent to `mouse['small']`, which retrieves the value `'small'` from the `mouse` object.
+
+```javascript
+console.log(mouse[bird["size"]]);
+```
+
+This will also output `'small'`. Here, `bird["size"]` is evaluated to `'small'`, so it becomes `mouse['small']`, resulting in the value `'small'` being retrieved from the `mouse` object.
+
+```javascript
+console.log(mouse.bird.size);
+```
+
+This will output an error: `TypeError: Cannot read property 'size' of undefined`. The `mouse` object does not have a property called `bird`, so accessing `mouse.bird.size` will result in an error.
+
+Therefore, the overall output will be:
+
+```
+undefined
+undefined
+small
+small
+TypeError: Cannot read property 'size' of undefined
+```
