@@ -1,0 +1,17 @@
+let greeting;
+greating ={};
+console.log(greating)
+A. {}
+b. reference error
+c.undefined
+
+Ans :- A
+
+In the code snippet you provided, there is a typographical error. The variable name is misspelled as `greating` instead of `greeting`.
+However, I'll assume you intended to declare an empty object and assign it to the variable `greeting`.
+
+
+The code declares a variable `greeting` and assigns an empty object `{}` to it. Then, it logs the value of `greeting` to the console.
+
+The output of `console.log(greeting)` will be an empty object `{}`. This indicates that the variable `greeting` has been assigned an 
+empty object as its value.
