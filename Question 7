@@ -1,0 +1,21 @@
+let a=3;
+let b=new Number(3);
+console.log(a==b)
+console.log(a===b)
+
+Output
+true
+false
+
+In JavaScript, the `==` operator checks for equality between two values, performing type coercion if necessary. On the other hand, 
+the `===` operator checks for strict equality, meaning it does not perform type coercion.
+
+
+
+The first `console.log(a == b)` statement compares the values of `a` and `b` for equality. Since the `==` operator performs type coercion,
+it converts the `b` object to its primitive value, which is `3`. Therefore, the comparison becomes `3 == 3`, which is true. The output will 
+be `true`.
+
+The second `console.log(a === b)` statement checks for strict equality between `a` and `b`. Since `a` is a primitive number and `b` is an 
+instance of the `Number` object, they have different types. The strict equality operator (`===`) does not perform type coercion,
+so the comparison `3 === new Number(3)` evaluates to `false`. The output will be `false`.
