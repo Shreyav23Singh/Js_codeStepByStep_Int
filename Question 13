@@ -1,0 +1,14 @@
+var num=8;
+var num=10;
+console.log(num)
+
+
+In JavaScript, the `var` keyword is used to declare variables. However, it is important to note that variables declared with `var` can be 
+re-declared without any errors. In your code, you have declared the variable `num` twice using `var`. 
+
+
+When a variable is re-declared using `var`, it does not create a new variable. Instead, it simply updates the value of the existing variable.
+
+
+In your case, the second declaration `var num = 10;` updates the value of the `num` variable to `10`. As a result, when you log `num` to the 
+console with `console.log(num)`, it will output `10`, the updated value of the variable. The first declaration of `num = 8;` becomes redundant and does not have any effect on the final output.
