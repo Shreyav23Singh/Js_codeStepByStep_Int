@@ -1,0 +1,28 @@
+Q1. function sayHi(){
+    console.log(name)
+    console.log(Age)
+    let name="Shreya";
+    let Age=23;
+}
+sayHi();
+
+Output :- Reference Error 
+
+Q2. function sayHi(){
+    console.log(name)
+    console.log(Age)
+    var name="Shreya";
+    let Age=23;
+}
+sayHi();
+
+Output :- Undefined 
+Reference Error:  Cannot access 'Age' before initialization
+
+Got error because you are trying to access the variables name and Age before they are declared. In JavaScript, variables declared with var are hoisted (moved to the top of their scope),
+but they are initialized with the value undefined. Variables declared with let or const are also hoisted, but they are not initialized until their declaration statement is encountered 
+during runtime.
+
+
+           
+
