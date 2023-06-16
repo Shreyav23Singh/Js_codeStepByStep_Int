@@ -1,0 +1,15 @@
+console.log(eval('10*10+5'))
+
+Output
+105
+
+The code `console.log(eval('10*10+5'));` will output the value `105` to the console.
+
+The `eval()` function is used to evaluate JavaScript code represented as a string. In this case, the string `'10*10+5'` represents 
+a mathematical expression. When `eval()` is called with this string as an argument, it will be interpreted and executed as JavaScript 
+code.
+
+
+The expression `'10*10+5'` is evaluated from left to right, following the usual rules of operator precedence in mathematics. 
+First, `10*10` is computed, resulting in `100`. Then, `100+5` is evaluated, giving the final result of `105`. 
+Therefore, `console.log(eval('10*10+5'));` will output `105` to the console.
