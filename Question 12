@@ -1,0 +1,15 @@
+let x=0;
+console.log(x++);
+
+Output
+0
+
+The code `let x = 0; console.log(x++);` will output the value `0` to the console.
+
+The `++` operator is the post-increment operator, which increments the value of `x` after it has been evaluated. 
+In this case, `x++` is used as an expression within the `console.log()` statement. The initial value of `x` is `0`, 
+so when `x++` is evaluated, the value of `x` is temporarily stored, and then it is incremented by 1.
+
+
+However, the `console.log()` function outputs the current value of `x` before the increment takes place. 
+Therefore, the output will be `0` since the increment happens after the value is logged.
