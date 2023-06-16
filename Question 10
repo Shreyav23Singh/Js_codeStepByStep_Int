@@ -1,0 +1,9 @@
+console.log(typeof [])
+
+Output:-
+Object
+
+The code `console.log(typeof []);` will output the string `'object'`. 
+
+In JavaScript, arrays are considered objects. The `typeof` operator is used to determine the type of a value or expression.
+When `typeof` is applied to an array `[]`, it returns `'object'` because arrays are a type of object in JavaScript.
