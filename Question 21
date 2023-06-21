@@ -1,0 +1,3 @@
+Question is how to turncate strings ? OR Extract strings
+let data ="Hello world , If you all do hardwork you can achieve anything";
+console.log(data.substring(13))
