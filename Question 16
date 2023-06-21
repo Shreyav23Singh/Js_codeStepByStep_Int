@@ -1,0 +1,18 @@
+const obj ={
+a:two ,
+b:two,
+}
+console.log(obj)
+
+This is because the const keyword makes the variable obj immutable, but the object it references can still be modified. In this case,
+the object obj has two properties, both of which have the name a. The first property is assigned the value 'one', and the second property 
+is assigned the value 'two'. When the code is executed, the second property will overwrite the first property, and the output will be the 
+object with the single property a with the value 'two'.
+
+Here is an explanation of what happens when the code is executed:
+
+The const keyword is used to declare the variable obj. This means that the variable obj cannot be reassigned to a new value.
+The object obj is created and assigned the value {'a': 'one', 'a': 'two'}.
+The console.log() function is used to print the value of the variable obj.
+The value of the variable obj is printed to the console. Since the object obj has two properties with the name a, the second property 
+overwrites the first property, and the output is the object with the single property a with the value 'two'.
