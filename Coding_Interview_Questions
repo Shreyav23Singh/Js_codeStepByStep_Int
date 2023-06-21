@@ -1,0 +1,38 @@
+1. Find max in an array
+
+
+let nums=[20,23,63,96,12,45,85];
+let len =nums.length;
+let max=0;
+for(let i=0;i<len;i++){
+    if(nums[i]>max){
+    max=nums[i];
+    }
+    
+}
+console.log(max)
+
+2. How do you reverse a string?
+
+
+let str="korwdrah";
+let revStr="";
+
+for(let i=str.length-1;i>=0;i--){
+    revStr+=str[i];
+}
+console.log(revStr)
+
+*******      Aliter 2      *********************
+
+let str1="";
+
+let reverseStr ='';
+if(str1===''){
+    console.log('Empty String')
+}
+
+for(let i=str1.length-1;i>=0;i--){
+    reverseStr +=str1[i];
+}
+console.log(reverseStr)
