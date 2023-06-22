@@ -31,3 +31,39 @@ This will output true because when comparing arrays using the == operator, it co
 a to b, they both refer to the same array object, resulting in true.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
+Question 3
+
+let a=[20]
+let b=[20]
+console.warn(a[0]==b[0])
+console.warn(a[0]===b[0])
+This will output true because the == operator compares the values after performing type coercion. In this case, both a[0] and b[0] have the same value,
+which is 20. So, the comparison returns true.
+In conclusion, both console.warn(a[0] == b[0]) and console.warn(a[0] === b[0]) will output true because the values and types of a[0] and b[0] are equal.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+Question 4
+let arr = [1, 2, 3, 4, 5];
+let obj = {
+  name: 'Hardwork',
+  section: '2',
+  rollNo: '23'
+};
+
+console.log([...arr]);
+console.log([...arr, obj]);
+```
+
+Output:
+```
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5, { name: 'Hardwork', section: '2', rollNo: '23' }]
+```
+
+In the first `console.log` statement, the spread syntax `[...arr]` spreads the elements of the `arr` array into a new array.
+Since `arr` contains the numbers 1 to 5, the output is `[1, 2, 3, 4, 5]`.
+
+In the second `console.log` statement, the spread syntax `[...arr, obj]` spreads the elements of `arr` and appends the `obj` object at the end.
+The `obj` object contains the properties `name`, `section`, and `rollNo`. , where `{ name: 'Hardwork', section: '2', rollNo: '23' }` represents the `obj` object.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
