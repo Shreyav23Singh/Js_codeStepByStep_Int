@@ -1,1 +1,19 @@
+QUESTION 1
+let a=[];
+let b=[];
+console.warn(a==b)
+console.warn(a===b)
+output
+false
+false
 
+In JavaScript, the `==` operator checks for equality by performing type coercion, while the `===` operator checks for equality without type
+coercion. 
+
+This will output `false` because when using the `==` operator with arrays, it compares the object references, not the contents of the arrays.
+Since `a` and `b` are two distinct array objects, their references are not the same, resulting in `false`.
+
+This will also output `false` because the `===` operator checks for strict equality, including both value and type. Again, `a` and `b` are
+two different array objects, so their types are different, resulting in `false`.
+
+In conclusion, both `console.warn(a == b)` and `console.warn(a === b)` will output `false`.
