@@ -127,3 +127,57 @@ Therefore, console.log(y) outputs "Sunny".
 
 In the second example, [, , z] = data skips the first and second elements ("Honey" and "Sunny") and assigns the third element ("Bunny") 
 to the variable z. Hence, console.log(z) outputs "Bunny".
+---------------------------------------------------------------------------------------------------------------------------------------------
+10. Question 
+//how to extract property without using dot operator
+const fun = {
+    name :"Shreya",
+    age :23,
+    skills:"Frontend Developer",
+    Address :"Gurgaon"
+    
+}
+const {skills } =fun; //By this we can do it
+console.log(fun)
+console.log(skills)
+
+Output
+{
+  name: 'Shreya',
+  age: 23,
+  skills: 'Frontend Developer',
+  Address: 'Gurgaon'
+}
+Frontend Developer
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+11. Question 
+To extract properties from an object without using the dot operator, you can use the object spread syntax (...) to merge the properties of multiple
+objects into a new object
+
+const info1 = {
+  name: "Shreya",
+  age: 23,
+  skills: "Frontend Developer",
+  Address: "Gurgaon"
+};
+
+const info2 = {
+  qualification: 'MCA',
+  College: "LPU"
+};
+
+const extractedInfo = { ...info1, ...info2 };
+console.log(extractedInfo);
+
+Output
+{
+  name: "Shreya",
+  age: 23,
+  skills: "Frontend Developer",
+  Address: "Gurgaon",
+  qualification: 'MCA',
+  College: "LPU"
+}
+the spread syntax { ...info1, ...info2 } is used to create a new object that combines the properties of info1 and info2. 
+The resulting object extractedInfo contains all the properties from both objects without using the dot operator to access individual properties.
