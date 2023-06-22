@@ -17,3 +17,17 @@ This will also output `false` because the `===` operator checks for strict equal
 two different array objects, so their types are different, resulting in `false`.
 
 In conclusion, both `console.warn(a == b)` and `console.warn(a === b)` will output `false`.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Question 2
+let a=[];
+let b=a;
+console.log(a==b)
+console.log(a===b)
+Output
+true
+This will output true because when comparing arrays using the == operator, it compares the object references. Since you assigned 
+a to b, they both refer to the same array object, resulting in true.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
