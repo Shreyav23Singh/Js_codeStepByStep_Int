@@ -67,3 +67,63 @@ In the second `console.log` statement, the spread syntax `[...arr, obj]` spreads
 The `obj` object contains the properties `name`, `section`, and `rollNo`. , where `{ name: 'Hardwork', section: '2', rollNo: '23' }` represents the `obj` object.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
+5. Question 
+console.log(typeof NaN)
+
+```javascript
+console.log(typeof NaN);  // Output: 'number'
+```
+
+In JavaScript, `NaN` is a special numeric value that represents an invalid or unrepresentable result of a mathematical operation. 
+Despite its name, `NaN` is considered a numeric data type.
+---------------------------------------------------------------------------------------------------------------------------------------------
+6. Question 
+let data =10 -  -10;
+console.log(data)
+Output
+20
+---------------------------------------------------------------------------------------------------------------------------------------------
+7. Question 
+const fun ={name : 'Success'}
+console.warn(delete fun.name)
+console.log(fun.name)
+
+Output
+true
+{}
+
+The delete operator is used in JavaScript to remove a property from an object. When you use the delete operator on a property and it succeeds 
+in deleting the property, it returns true. Otherwise, it returns false.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+8. Question 
+
+const fun ={name : 'Success'}
+console.warn(delete fun)
+
+Output
+false
+Because we can delete the object directly itself by delete , in  fun still name property iss there
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+9. Question 
+const data =["Honey" , "Sunny" ,"Bunny"];
+const [y]=data;
+console.log(y)
+//If I want only Sunny than what to do
+const [,z]=data;
+console.log(z)
+//If I want only Bunny than what to do
+const [,,x]=data;
+console.log(x)
+
+Output
+Honey
+Sunny
+Bunny
+
+In the first example, [, y] = data skips the first element ("Honey") and assigns the second element ("Sunny") to the variable y. 
+Therefore, console.log(y) outputs "Sunny".
+
+In the second example, [, , z] = data skips the first and second elements ("Honey" and "Sunny") and assigns the third element ("Bunny") 
+to the variable z. Hence, console.log(z) outputs "Bunny".
